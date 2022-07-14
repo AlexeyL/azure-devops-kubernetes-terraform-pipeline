@@ -23,7 +23,7 @@ stages:
     - task: Docker@2
       inputs:
         containerRegistry: 'Olevenets-DockerHub'
-        repository: 'AlexeyL/currency-exchange-devops'
+        repository: 'Olevenets/currency-exchange-devops'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: '$(tag)'
